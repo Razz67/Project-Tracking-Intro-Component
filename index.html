@@ -9,9 +9,6 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/c1001a4d6c.js" crossorigin="anonymous"></script>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Condensed:400,700&display=swap" rel="stylesheet">
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -20,45 +17,42 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Condensed:400,700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Project tracking intro component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
   <div class="container-fluid">
+  <!-- Left Side -->
+  <img id="logo-svg" src="images/logo.svg" alt="Logo">
+
     <div class="row">
-      <div class="col-md-6">
-        <button type="button" class="btn btn-secondary btn-sm">New</button>
-        <p>Monograph Dashboard</p>
+      <div class="col-lg-6">
+        <!-- New Button -->
+        <button type="button" class="btn btn-secondary btn-md btn-new">NEW</button> 
+        <p class="new-description">Monograph Dashboard</p>
 
 
-        <h1>Powerful insights into your team</h1>
-        <p>Project planning and time tracking for agile teams</p>
+        <h1 class="big-header">POWERFUL INSIGHTS INTO YOUR TEAM</h1>
+        <h5 id="header-description">Project planning and time tracking for agile teams</h5>
 
-        <button type="button" class="btn btn-secondary btn-sm">Schedule a demo</button>
-        <p>to see a live preview</p>
+        <button id="demo-btn" type="button" class="btn btn-secondary btn-lg">Schedule a demo</button>
+        <p id="demoBtn-content">to see a live preview</p>
       </div>
-
-      <div class="col-md-6">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Right Side -->
+      <div id="right-header" class="col-lg-6">
+        <nav class="navbar-top navbar navbar-expand-lg navbar-light" role="navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-top"
+            aria-controls="navbar-top" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <div class="collapse navbar-collapse" id="navbar-top">
             <a class="navbar-brand" href="#"></a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav navbar-right">
               <li class="nav-item active">
                 <a class="nav-link" href="#">PRODUCT <span class="sr-only">(current)</span></a>
               </li>
@@ -66,27 +60,28 @@
                 <a class="nav-link" href="#">FEATURES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">PRICING</a>
+                <a class="nav-link" href="#">PRICING</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">LOGIN</a>
+                <a class="nav-link" href="#" aria-disabled="true">LOGIN</a>
               </li>
             </ul>
+            </nav>
+            <img id="device-img" class="img-fluid" style="width: 100% \9" src="images/illustration-devices.svg" alt="Electronic Devices">
           </div>
       </div>
     </div>
   </div>
 
-
-
-
-
+  <!-- Footer -->
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Stephine Rasberry</a>.
     </p>
   </footer>
+
+
 
   <!-- Bootstrap JS CDN  -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -2,9 +2,129 @@ body {
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    margin: 0;
-    padding: 0;
+    text-align: center;
 }
+
+h1 {
+    color:hsl(230, 29%, 20%);
+    font-family: "Barlow Condensed";
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+}
+
+p {
+    color: hsl(216, 4%, 75%);
+}
+
+.container-fluid {
+    position: relative;
+}
+
+/* NavBar */
+
+.navbar-top {
+    position: relative;
+    margin: 8%;
+}
+
+  
+.nav-item {
+    padding: 5%;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+/* Header Image */
+
+#device-img {
+position: relative;
+left: -2%;
+top: -25%;
+}
+
+/* Right Side */
+
+#right-header {
+    background-color: hsl(207, 33%, 95%);
+}
+
+/* Left Side */
+
+.btn {
+    background-color:hsl(230, 29%, 20%);
+}
+
+#logo-svg {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+}
+
+.big-header {
+    position: relative;
+    bottom: -30%;
+    line-height: .9;
+}
+
+#header-description {
+    color: hsl(216, 4%, 75%);
+    position: absolute;
+    bottom: 20%;
+    width: 50%;
+}
+
+.btn-new {
+    border-radius: 40%;
+    position: absolute;
+    left: 2%;
+    top: 30%;
+    text-align: center;
+}
+
+.new-description {
+    position: relative;
+    left: -22%;
+    top: 31%;
+}
+
+#demo-btn {
+
+    position: absolute;
+    bottom: 1%;
+    left: 2%;
+}
+
+#demo-btn:hover {
+    background-color: hsl(0, 100%, 68%);
+}
+
+#demoBtn-content {
+    position: absolute;
+    bottom: 0%;
+    left: 35%;
+}
+
+/* Footer */
+footer {
+    margin-top: 5%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
 
 /* Fonts
 font-family: 'Barlow Condensed', sans-serif;
